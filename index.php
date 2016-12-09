@@ -24,7 +24,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<p>Название сайта</p>
-			<div class="navbar navbar-inverse">
+			<div class="navbar navbar-inverse  navbar-fixed-top">
 				<!-- BootStrap CONTAINER-->
 				<div class="container">
 					<div class="navbar-header">
@@ -52,7 +52,30 @@
 					<div class="collapse navbar-collapse" id="responsive-menu">
 						<ul class="nav navbar-nav">
 							<!-- li*4>a[href="#"]{Пункт $} -->
-							<li><a href="#">Пункт 1</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Пункт 1 
+									<b class="caret"></b>
+										<ul class="dropdown-menu">
+										<!-- ul.dropdown-menu>li*4>a[href="#"] -->
+											<ul class="dropdown-menu">
+												<li><a href="#">
+														<p>Пункт 1</p>
+													</a></li>
+												<li><a href="#">
+														<p>Пункт 2</p>
+													</a></li>
+												<li><a href="#">
+														<p>Пункт 3</p>
+													</a></li>
+												<li><a href="#">
+														<p>Пункт 4</p>
+													</a></li>
+											</ul>
+										</ul>
+								</a>
+							
+							</li>
+							
 							<li><a href="#">Пункт 2</a></li>
 							<li><a href="#">Пункт 3</a></li>
 							<li><a href="#">Пункт 4</a></li>
