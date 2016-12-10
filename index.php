@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Обучение BootStrap v3</title>
 	<link rel="stylesheet" href="font-awesome.min.css">
 	<!--jQuery 3.1.1 MIN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -19,9 +19,18 @@
 	<!--- BootStrap JS 3.3.7 MIN -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+<!------------------------------
+Блок с меню BootStrap
+------------------------------->
+
 	<!-- BootStrap CONTAINER FLUID-->
-	<div class="container-fluid">
+	<div class="container-fluid" style="padding-bottom: 28px; display:visible;">
+								<!------------------------------
+								Отключил меню
+								------------------------------->
+								
 		<div class="row">
 			<p>Название сайта</p>
 			<div class="navbar navbar-inverse  navbar-fixed-top">
@@ -58,18 +67,10 @@
 										<ul class="dropdown-menu">
 										<!-- ul.dropdown-menu>li*4>a[href="#"] -->
 											<ul class="dropdown-menu">
-												<li><a href="#">
-														<p>Пункт 1</p>
-													</a></li>
-												<li><a href="#">
-														<p>Пункт 2</p>
-													</a></li>
-												<li><a href="#">
-														<p>Пункт 3</p>
-													</a></li>
-												<li><a href="#">
-														<p>Пункт 4</p>
-													</a></li>
+												<li><a href="#"><p>Пункт 1</p></a></li>
+												<li><a href="#"><p>Пункт 2</p></a></li>
+												<li><a href="#"><p>Пункт 3</p></a></li>
+												<li><a href="#"><p>Пункт 4</p></a></li>
 											</ul>
 										</ul>
 								</a>
@@ -83,6 +84,51 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+<!------------------------------
+Блок с div BootStrap урок 1.4
+------------------------------->
+<!-- div>p.b{Работа с отступами в BootStrap урок 1.5} -->
+		<div style="text-align:center;">
+			<p>
+				<h2>Работа с отображением и скрытием блоков в BootStrap урок 1.4</h2>
+			</p>
+		</div>		
+
+	<!-- BootStrap CONTAINER -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-6 block" >
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, ea, eum, omnis ducimus voluptates nesciunt quam cumque nemo ad qui obcaecati placeat consequuntur nulla minima nisi dolorum necessitatibus asperiores repudiandae.</p>
+			</div>
+			<div class="col-md-3 col-sm-6 block" ><b>6</b></div>
+			<!------------------------------
+			Сброс блоков, перенос блоков при помощи .clearfix
+			http://getbootstrap.com/css/#helper-classes-clearfix
+			------------------------------->
+			<!------------------------------
+			Скрытие и показ блоковhttp://getbootstrap.com/css/#helper-classes-show-hide
+			------------------------------->
+			<div class="clearfix visible-sm-block"></div>
+			
+			<div class="col-md-3 col-sm-6 block" ><b>6</b></div>
+			<div class="col-md-3 col-sm-6 block" ><b>6</b></div>
+		</div>
+	</div>
+<!-----------------------------------------
+Работа с отступами в BootStrap урок 1.5
+------------------------------------------->
+	<!-- BootStrap CONTAINER -->
+	<div class="container">
+		<div class="row">
+		<!-- div>p.b{Работа с отступами в BootStrap урок 1.5} -->
+		<div style="text-align:center;">
+			<p>
+				<h2>Работа с отступами в BootStrap урок 1.5</h2>
+			</p>
+		</div>
+			<div class="col-md-12"></div>
 		</div>
 	</div>
 </body>
