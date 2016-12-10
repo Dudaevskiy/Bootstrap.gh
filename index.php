@@ -111,13 +111,14 @@
 			Скрытие и показ блоковhttp://getbootstrap.com/css/#helper-classes-show-hide
 			------------------------------->
 			<div class="clearfix visible-sm-block"></div>
-			
+			<!-- END clearfix -->
 			<div class="col-md-3 col-sm-6 block" ><b>6</b></div>
 			<div class="col-md-3 col-sm-6 block" ><b>6</b></div>
 		</div>
 	</div>
 <!-----------------------------------------
 Работа с отступами в BootStrap урок 1.5
+http://getbootstrap.com/css/#grid-responsive-resets
 ------------------------------------------->
 	<!-- BootStrap CONTAINER -->
 	<div class="container">
@@ -128,8 +129,76 @@
 				<h2>Работа с отступами в BootStrap урок 1.5</h2>
 			</p>
 		</div>
-			<div class="col-md-12"></div>
+		<!-- 
+		Необходимо добиться прилипания блока №1 к левому краю
+		а блока №2 к правому краю. Для этого используется класс offset
+		Пример <div class="col-md-4 col-md-offset-4"></div> 
+		-->
+		<p style="text-align:center;">Прилипание блоков по краям</p>
+			<div class="col-md-2 col-md-offset-0 block"><p><b>1</b></p></div>
+			<div class="col-md-2 col-md-offset-8 block"><p><b>2</b></p></div>
+			
+		<p style="text-align:center;">Один блок разместим по центру остальные под ним</p>			
+			<div class="col-md-6 col-md-offset-3 block"><p><b>1</b></p></div>
+			<div class="col-md-2 col-md-offset-2 block"><p><b>2</b></p></div>
+			<div class="col-md-2 block"><p><b>3</b></p></div>
+			<div class="col-md-2 block"><p><b>4</b></p></div>
+			<div class="col-md-2 block"><p><b>5</b></p></div>
 		</div>
+		<!------------------------------
+		Вложенный контент в колонки
+		http://getbootstrap.com/css/#grid-nesting
+		------------------------------->
+<!-- p[style="text-align:center;"]>{Вложенный контент} -->
+		<p style="text-align:center;">Вложенный колонки</p>
+		<div class="col-md-4 block"><b>Sidebar</b></div>
+		<!-- Допустм нам нужно внутри контейнера ниже разместить товары -->
+		<div class="col-md-8 block">
+			<!-- BootStrap ROW-->
+			<div class="row">
+<!-- .col-md-1*12>p>b{$} -->
+				<div class="col-sm-4 block">
+					<p><b>1</b></p>
+				</div>
+				<div class="col-sm-4 block">
+					<p><b>2</b></p>
+				</div>
+				<div class="col-sm-4 block">
+					<p><b>3</b></p>
+				</div>
+
+			</div>
+		</div>
+		<!-- 
+		Порядок колонок	(или меняем блоки местами)
+		http://getbootstrap.com/css/#grid-column-ordering
+		
+		При помощи pull сдвигаем в лево
+		При помощи push сдвигаем в право
+		-->
+		<p style="text-align:center;">Порядок колонок</p>
+		
+		<div class="col-md-4 col-md-push-8 block"><b>Logo</b></div>
+		<div class="col-md-8 col-md-pull-4 block">
+			<!-- BootStrap ROW-->
+			<div class="row">
+<!-- .col-md-1*12>p>b{$} -->
+				<div class="col-sm-4 block">
+					<p><b>1</b></p>
+				</div>
+				<div class="col-sm-4 block">
+					<p><b>2</b></p>
+				</div>
+				<div class="col-sm-4 block">
+					<p><b>3</b></p>
+					<hr>
+				</div>
+
+			</div>
+		</div>
+		
+		
+		
 	</div>
 </body>
 <!-- LiveReload -->
