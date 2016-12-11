@@ -53,8 +53,10 @@
 							<i class="fa fa-odnoklassniki fa-1x" style="color: beige;" aria-hidden="true"></i>
 						</div>
 							<!-- LOGO -->
-							<div class="col-xs-5" style="float:left;position: relative;">
+							<div class="col-xs-5" style="float:left;position:relative; width:100% !important;">
+							<a href="\">
 								<img style="height: 56px;" src="\logo.jpg" alt="LOGO IMAGE">
+							</a>
 							</div>
 						<!-- <div class="navbar-brand" href="#">Название сайта</div> -->
 					</div>
@@ -86,6 +88,25 @@
 			</div>
 		</div>
 	</div>
+ <!------------------------------
+ Ссылки на практику по урокам BootStrap
+ ------------------------------->
+	<!-- BootStrap CONTAINER -->
+	<div class="container">
+		<div class="row">
+		<div class="col-md-12" style="text-align:center;"><h3>Страницы на практические работы</h3></div>
+		<div class="col-md-3"><a href="\ticher\1.6.php">Урок 1.6 "Первая верстка примитивной главной страницы"</a></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-3"></div>
+		</div>
+
+
+			
+
+	</div>
+	
+	
 <!------------------------------
 Блок с div BootStrap урок 1.4
 ------------------------------->
@@ -94,7 +115,9 @@
 			<p>
 				<h2>Работа с отображением и скрытием блоков в BootStrap урок 1.4</h2>
 			</p>
-		</div>		
+		</div>
+
+ 		
 
 	<!-- BootStrap CONTAINER -->
 	<div class="container">
