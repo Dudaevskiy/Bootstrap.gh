@@ -8,16 +8,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!--- Font Awesome JS 4.0.3 MIN -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<!-- BootStrap CSS 3.3.7 MIN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--- BootStrap JS 3.3.7 MIN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!--LESS LESS -->
 	<link rel="stylesheet/less" href="/style.less" type="text/css">
 	<!--LESS JS 2.7.1 MIN -->
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
 	<!--- Font Noto Sans -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext">
-	<!-- BootStrap CSS 3.3.7 MIN-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!--- BootStrap JS 3.3.7 MIN -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 </head>
 
 <body style="padding-bottom:200px;">
@@ -97,7 +98,7 @@
 		<div class="col-md-12" style="text-align:center;"><h3>Страницы на практические работы</h3></div>
 			<div class="col-md-3"><a href="\ticher\1.6.php">Урок 1.6 "Первая верстка примитивной главной страницы"</a></div>
 			<div class="col-md-3"><a href="\ticher\1.7.php">Урок 1.7 "Компоненты BootStrap"</a></div>
-			<div class="col-md-3"></div>
+			<div class="col-md-3"><a href="\ticher\1.8.php">Урок 1.8 "Переопределение стилей BootStrap"</a></div>
 			<div class="col-md-3"></div>
 		</div>
 	</div>

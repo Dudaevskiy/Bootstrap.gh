@@ -93,29 +93,39 @@
 	<!-- BootStrap CONTAINER -->
 	<div class="container">
 		<h1 style="text-align:center;">1.7 Компоненты</h1>
+<h3 style="text-align:center;">Оформление таблицы</h3>
 			<!-- tr*3>td*5>{Item $} -->
 			<!------------------------------
 			Для оформления таблиц в BootStrap используются классы:
 			table - данный класс красиво оформляет таблицу в общем
 			table-striped - подсведка через линию
 			table-bordered - Подсветка границ таблиц
+			table-hover - Подсветка таблиц при наведении
+			table-condensed - Класс делает таблицу более компактной
 			
+			Классы подсветки рядов
+			active - серый	
+			success	- зеленый
+			warning	- бежевый
+			danger	- красный
+			info - голубой
 			------------------------------->
 			
-			<table class="table table-striped table-bordered">
+			<table class="table table-striped table-bordered table-hover table-condensed">
 			<thead>
-				<th>Item 1</th>
+				<th class="">Item 1</th>
 				<th>Item 2</th>
 				<th>Item 3</th>
 				<th>Item 4</th>
 				<th>Item 5</th>
 			</thead>
 			<tr>
-				<td>Item 1</td>
-				<td>Item 2</td>
-				<td>Item 3</td>
-				<td>Item 4</td>
-				<td>Item 5</td>
+			 <!-- Подсведка классы подсветки рядов -->
+			  <td class="active">active</td>
+			  <td class="success">success</td>
+			  <td class="warning">warning</td>
+			  <td class="danger">danger</td>
+			  <td class="info">info</td>
 			</tr>
 			<tr>
 				<td>Item 1</td>
@@ -132,8 +142,133 @@
 				<td>Item 5</td>
 			</tr>
 			</table>
+			
+<h3 style="text-align:center;">Создание таблицы с прокруткой - Responsive</h3>
+<p style="text-align:center;"><a href="http://getbootstrap.com/css/#tables">http://getbootstrap.com/css/#tables</a></p>
+			<!------------------------------
+			Для создания прокрутки используется класс table-responsive
+			------------------------------->
+		<div class="table-responsive">
+		<!-- Обвернул таблицу в table-responsive -->
+			<table class="table table-striped table-bordered table-hover table-condensed">
+				<thead>
+					<th class="">Item 1</th>
+					<th>Item 2</th>
+					<th>Item 3</th>
+					<th>Item 4</th>
+					<th>Item 5</th>
+					<th>Item 6</th>
+					<th>Item 7</th>
+					<th>Item 8</th>
+					<th>Item 9</th>
+					<th>Item 10</th>
+				</thead>
+				<tr>
+					<td>Item 1</td>
+					<td>Item 2</td>
+					<td>Item 3</td>
+					<td>Item 4</td>
+					<td>Item 5</td>
+					<td>Item 6</td>
+					<td>Item 7</td>
+					<td>Item 8</td>
+					<td>Item 9</td>
+					<td>Item 10</td>
+				</tr>
+				<tr>
+					<td>Item 1</td>
+					<td>Item 2</td>
+					<td>Item 3</td>
+					<td>Item 4</td>
+					<td>Item 5</td>
+					<td>Item 6</td>
+					<td>Item 7</td>
+					<td>Item 8</td>
+					<td>Item 9</td>
+					<td>Item 10</td>
+				</tr>
+				<tr>
+					<td>Item 1</td>
+					<td>Item 2</td>
+					<td>Item 3</td>
+					<td>Item 4</td>
+					<td>Item 5</td>
+					<td>Item 6</td>
+					<td>Item 7</td>
+					<td>Item 8</td>
+					<td>Item 9</td>
+					<td>Item 10</td>
+				</tr>
+			</table>
+<h3 style="text-align:center;">Работа с формами</h3>
+<p style="text-align:center;"><a href="http://getbootstrap.com/css/#forms">http://getbootstrap.com/css/#forms</a></p>
+<p style="text-align:center;"><a href="http://getbootstrap.com/components/#input-groups-basic">Своеобразные лейблы для форм</a></p>
+			<!------------------------------
+			Выравнивание по горизонтали form-horizontal
+			Выравнивание по вертикали form-inline
+			------------------------------->
+			
+			<form class="form-horizonatl">
+			  <div class="form-group">
+				<label class="sr-only" for="exampleInputEmail3">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+				<label class="sr-only" for="exampleInputPassword3">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+			  </div>
+			  <div class="checkbox">
+				<label>
+				  <input type="checkbox"> Remember me
+				</label>
+			  </div>
+			  <button type="submit" class="btn btn-default">Sign in</button>
+			</form>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://lorempixel.com/1200/300" alt="Image">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://lorempixel.com/1200/301" alt="Image">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+	<div class="item">
+      <img src="http://lorempixel.com/1200/299" alt="Image">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+			
 		</div>
-	</div>
+	
+</div>
 
  
 </body>
