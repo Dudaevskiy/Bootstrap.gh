@@ -188,6 +188,56 @@
 			</div>
 		</div>
 	</div>
+	<h1 style="text-align:center;">Выполение домашнего задания<p>Мой вариант</p></h1>
+	<!-- BootStrap CONTAINER -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 visible-lg block">col-lg-2</div>
+			<div class="col-lg-8 visible-lg block">col-lg-8</div>
+			<div class="col-lg-2 visible-lg block">col-lg-2</div>
+		</div>
+		<!-- BootStrap ROW-->
+		<div class="row">
+			<div class="col-md-3 visible-md block">col-md-3</div>
+			<div class="col-md-6 visible-md block">col-md-6</div>
+			<div class="col-md-3 visible-md block">col-md-3</div>
+		</div>
+		<!-- BootStrap ROW-->
+		<div class="row">
+			<div class="col-sm-6 visible-sm block">col-sm-6</div>
+			<div class="col-sm-6 visible-sm block">col-sm-6</div>
+		</div>
+		<!-- BootStrap ROW-->
+		<div class="row">
+			<div class="col-xs-4  visible-xs block">col-xs-4</div>
+			<div class="col-xs-4  visible-xs block">col-xs-4</div>
+			<div class="col-xs-4  visible-xs block">col-xs-4</div>
+		</div>
+	</div>
+	<h1 style="text-align:center;">Выполение домашнего задания<p>Правильный вариант</p></h1>
+	<!-- BootStrap CONTAINER -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4 col-ms-6 col-md-3 col-lg-2 block">
+				<p class="visible-lg-block">col-lg-2</p>
+				<p class="visible-md-block">col-md-3</p>
+				<p class="visible-sm-block">col-sm-6</p>
+				<p class="visible-xs-block">col-xs-4</p>
+			</div>
+			<div class="col-xs-4 col-ms-6 col-md-6 col-lg-8 block">
+				<p class="visible-lg-block">col-lg-8</p>
+				<p class="visible-md-block">col-md-6</p>
+				<p class="visible-sm-block">col-sm-6</p>
+				<p class="visible-xs-block">col-xs-4</p>
+			</div>
+			<div class="col-xs-4 col-ms-6 col-md-3 col-lg-2 block">
+				<p class="visible-lg-block">col-lg-2</p>
+				<p class="visible-md-block">col-md-3</p>
+				<p class="visible-sm-block">col-sm-6</p>
+				<p class="visible-xs-block">col-xs-4</p>
+			</div>
+		</div>
+	</div>
  
 </body>
 <!-- LiveReload -->

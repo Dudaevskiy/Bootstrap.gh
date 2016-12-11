@@ -95,15 +95,11 @@
 	<div class="container">
 		<div class="row">
 		<div class="col-md-12" style="text-align:center;"><h3>Страницы на практические работы</h3></div>
-		<div class="col-md-3"><a href="\ticher\1.6.php">Урок 1.6 "Первая верстка примитивной главной страницы"</a></div>
-			<div class="col-md-3"></div>
+			<div class="col-md-3"><a href="\ticher\1.6.php">Урок 1.6 "Первая верстка примитивной главной страницы"</a></div>
+			<div class="col-md-3"><a href="\ticher\1.7.php">Урок 1.7 "Компоненты BootStrap"</a></div>
 			<div class="col-md-3"></div>
 			<div class="col-md-3"></div>
 		</div>
-
-
-			
-
 	</div>
 	
 	
