@@ -20,7 +20,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="padding-bottom:200px;">
 <!------------------------------
 Блок с меню BootStrap
 ------------------------------->
@@ -128,6 +128,7 @@ http://getbootstrap.com/css/#grid-responsive-resets
 			<p>
 				<h2>Работа с отступами в BootStrap урок 1.5</h2>
 			</p>
+			<p><a href="http://getbootstrap.com/css/#grid-responsive-resets"></a></p>
 		</div>
 		<!-- 
 		Необходимо добиться прилипания блока №1 к левому краю
@@ -151,6 +152,8 @@ http://getbootstrap.com/css/#grid-responsive-resets
 		------------------------------->
 <!-- p[style="text-align:center;"]>{Вложенный контент} -->
 		<p style="text-align:center;">Вложенный колонки</p>
+		<p>Вложенный контент в колонки <br>
+					<a href="http://getbootstrap.com/css/#grid-nesting">http://getbootstrap.com/css/#grid-nesting</a></p>
 		<div class="col-md-4 block"><b>Sidebar</b></div>
 		<!-- Допустм нам нужно внутри контейнера ниже разместить товары -->
 		<div class="col-md-8 block">
@@ -177,27 +180,102 @@ http://getbootstrap.com/css/#grid-responsive-resets
 		При помощи push сдвигаем в право
 		-->
 		<p style="text-align:center;">Порядок колонок</p>
-		
+		<h4><b>Порядок колонок	(или меняем блоки местами)</b></h4><br>
+					<a href="http://getbootstrap.com/css/#grid-column-ordering">
+					http://getbootstrap.com/css/#grid-column-ordering</a><br>
+					<br>
+					При помощи pull сдвигаем в лево <br>
+					При помощи push сдвигаем в право</p>
+					<h4><b>Разделитель и скрытие его</b>
+					</br><a href="http://getbootstrap.com/css/#responsive-utilities-classes">http://getbootstrap.com/css/#responsive-utilities-classes</a></h4>
+					<p>hr разделииель для блоков снизу</p>
+					<p>Если необходимо скрыть отображение блока <br>
+					на том или ином разрешении экрана указываем класс hidden. <br>
+					<b>Например:</b><br>
+					hidden-lg hidden-md hidden-sm - скроет блок на экранах lg,md,sm<br>
+					но отобразит на остальных разрешениях (xs)</p>
 		<div class="col-md-4 col-md-push-8 block"><b>Logo</b></div>
 		<div class="col-md-8 col-md-pull-4 block">
 			<!-- BootStrap ROW-->
 			<div class="row">
 <!-- .col-md-1*12>p>b{$} -->
+				<!-- Вставляем розделитель <hr> -->
+				<!------------------------------
+				Если необходимо скрыть отображение блока
+				на том или ином разрешении экрана указываем класс hidden.
+				Например:
+				hidden-lg hidden-md hidden-sm - скроет блок на экранах lg,md,sm
+				но отобразит на остальных разрешениях (xs)
+				------------------------------->
 				<div class="col-sm-4 block">
-					<p><b>1</b></p>
+					<p><b>1</b> hr виден только на xs</p>
+					<hr class="hidden-lg hidden-md hidden-sm">
 				</div>
 				<div class="col-sm-4 block">
-					<p><b>2</b></p>
+					<p><b>2</b> hr виден только на xs</p>
+					<hr class="hidden-lg hidden-md  hidden-sm">
 				</div>
 				<div class="col-sm-4 block">
-					<p><b>3</b></p>
-					<hr>
+					<p><b>3</b> hr виден только на xs</p>
+					<hr class="hidden-lg hidden-md hidden-sm">
 				</div>
 
 			</div>
 		</div>
+		<!------------------------------
+		Отобразим блок только на определенном виде устройств
+		------------------------------->
+				Если необходимо отображение блока</br>
+				на том или ином разрешении экрана указываем класс <b>visible</b>.</br>
+				<b>Например:</b><br>
+				visible-lg visible-md visible-sm - отобразит блок только на экранах lg,md,sm<br>
+				но скроет на остальных разрешениях (xs)</p>
+		<div class="col-md-4 col-md-push-8 block"><b>Logo</b></div>
+		<div class="col-md-8 col-md-pull-4 block">
+			<!-- BootStrap ROW-->
+			<div class="row">
+<!-- .col-md-1*12>p>b{$} -->
+				<!-- Вставляем розделитель <hr> -->
+				<!------------------------------
+				Если необходимо отображение блока
+				на том или ином разрешении экрана указываем класс visible.
+				Например:
+				visible-lg visible-md visible-sm - отобразит блок только на экранах lg,md,sm
+				но скроет на остальных разрешениях (xs)
+				------------------------------->
+				<div class="col-sm-4 block">
+					<p><b>1</b> hr виден только на lg,md,sm</p>
+					<hr class="visible-lg visible-md visible-sm">
+				</div>
+				<div class="col-sm-4 block">
+					<p><b>2</b> hr виден только на lg,md,sm</p>
+					<hr class="visible-lg visible-md visible-sm">
+				</div>
+				<div class="col-sm-4 block">
+					<p><b>3</b> hr виден только на lg,md,sm</p>
+					<hr class="visible-lg visible-md visible-sm">
+				</div>
+
+			</div>
+		</div>
+		</br></br>
+		<h4><b>Использование дополнительного .clearfix для родительского элемента</b></h4>
+		<p><b><a href="http://getbootstrap.com/css/#helper-classes-clearfix">http://getbootstrap.com/css/#helper-classes-clearfix</a></b></p>
+		<!-- BootStrap CONTAINER -->
+		<!------------------------------
+		Допустим хочу разместить два блока в одну линию
+		http://getbootstrap.com/css/#helper-classes-floats
+		------------------------------->
 		
-		
+		<div class="container">
+			<div class="clearfix block">
+				<p class="pull-left block">Hello</p>
+				<p class="pull-right block">World</p>
+				
+			</div>
+		</div>
+		<div class="col-md-12"></div>
+	     
 		
 	</div>
 </body>
