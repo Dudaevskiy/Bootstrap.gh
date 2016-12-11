@@ -90,7 +90,7 @@
 		</div>
 	</div>
 <!-- MENU END -->
-<h1 style="text-align:center;">1.8 Переопределение стилей BootStrap</h1>
+<h1 style="text-align:center;">1.9 Переопределение стилей BootStrap</h1>
 <!-- BootStrap CONTAINER -->
 <div class="container">
 	<div class="row">
@@ -117,7 +117,7 @@
 <br> <img style="width:550px;" src="\ticher\1.9_2.png" alt="">
 <br> Далее перетягиваем папку с less файлами в окно программы, наводим курсор на файл bootstrap.less в окне программы <br>
 <br> и жмем правую кнопку мыши. Далее выбирваем "Настройка пути вывда", и выбираем файл bootstrap.css в папке css BootStrap'a
-
+<br> В основном все правки вносятся в файл variables.less, так как он содержит все переменные фреймверка.
 </p>
 		
 		</div>
