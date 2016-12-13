@@ -1,0 +1,27 @@
+/* line 5, Z:/OpenServer/domains/Bootstrap.gh/Bootstrap_3.3.7_my_custom_SCSS/Bootstrap_my_custom.scss */
+div {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #000066;
+}
+
+/* line 8, Z:/OpenServer/domains/Bootstrap.gh/Bootstrap_3.3.7_my_custom_SCSS/Bootstrap_my_custom.scss */
+div.highlight {
+  color: #6666ff;
+}
+
+/* line 13, Z:/OpenServer/domains/Bootstrap.gh/Bootstrap_3.3.7_my_custom_SCSS/Bootstrap_my_custom.scss */
+divww {
+  border-radius: 5px;
+  color: #000066;
+}
+
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+border-radius: 3px;
+
+/*# sourceMappingURL=../Bootstrap_my_custom.map */

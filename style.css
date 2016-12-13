@@ -1,4 +1,14 @@
-body {
-	width: 100%;
-	padding: 10px auto
+/* ��������� ������ Bootstrap ��� ������� */
+.block {
+  /* padding-top: 5px; */
+  /* padding-bottom: 5px; */
+  background-color: #eee;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}
+/* ��������� END */
+img {
+  max-width: 100%;
+  height: auto;
 }

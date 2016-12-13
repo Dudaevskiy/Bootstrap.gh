@@ -1,0 +1,25 @@
+@import "compass";
+$base-border-radius: 5px;
+$base-color: #000066;
+$highlight-color: lighten($base-color, 50);
+div {
+  @include border-radius($base-border-radius);
+  color: $base-color;
+  &.highlight {
+    color: $highlight-color;
+  }
+}
+
+divww {
+  border-radius: 5px;
+  color: #000066;
+}
+
+@mixin border-radius($radius) { 
+ -webkit-border-radius: $radius; 
+ -moz-border-radius: $radius; 
+ -ms-border-radius: $radius; 
+ border-radius: $radius; 
+}
+
+@include border-radius(3px);
